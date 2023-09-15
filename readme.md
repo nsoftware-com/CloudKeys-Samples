@@ -5,14 +5,14 @@ The provided sample projects offer a concise yet effective demonstration of the 
 Cloud Keys 2022 libraries for the corresponding edition are required to run these samples.  Free download from: [https://www.nsoftware.com/cloudkeys](https://www.nsoftware.com/cloudkeys)
 
 ## Reference Documentation
-[Java](https://cdn.nsoftware.com/help/EKH/java/)
-[Javascript](https://cdn.nsoftware.com/help/EKH/js/)
-[.NET](https://cdn.nsoftware.com/help/EKH/cs/)
-[Python](https://cdn.nsoftware.com/help/EKH/py/)
-[PHP](https://cdn.nsoftware.com/help/EKH/php/)
-[C++](https://cdn.nsoftware.com/help/EKH/cpp/)
-[macOS](https://cdn.nsoftware.com/help/EKH/mac/)
-[iOS](https://cdn.nsoftware.com/help/EKH/mac/)
+* [Java Edition](https://cdn.nsoftware.com/help/EKH/java/)
+* [Javascript Edition](https://cdn.nsoftware.com/help/EKH/js/)
+* [.NET Edition](https://cdn.nsoftware.com/help/EKH/cs/)
+* [Python Edition](https://cdn.nsoftware.com/help/EKH/py/)
+* [PHP Edition](https://cdn.nsoftware.com/help/EKH/php/)
+* [C++ Edition](https://cdn.nsoftware.com/help/EKH/cpp/)
+* [macOS Edition](https://cdn.nsoftware.com/help/EKH/mac/)
+* [iOS Edition](https://cdn.nsoftware.com/help/EKH/mac/)
 
 ## Sample Projects
 | Sample Project | Description |
