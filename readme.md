@@ -6,11 +6,12 @@ Cloud Keys 2022 libraries for the corresponding edition are required to run thes
 
 ## Reference Documentation
 * [Java Edition](https://cdn.nsoftware.com/help/EKH/java/)
-* [Javascript Edition](https://cdn.nsoftware.com/help/EKH/js/)
 * [.NET Edition](https://cdn.nsoftware.com/help/EKH/cs/)
+* [JavaScript Edition](https://cdn.nsoftware.com/help/EKH/js/)
 * [Python Edition](https://cdn.nsoftware.com/help/EKH/py/)
 * [PHP Edition](https://cdn.nsoftware.com/help/EKH/php/)
 * [C++ Edition](https://cdn.nsoftware.com/help/EKH/cpp/)
+* [Delphi Edition](https://cdn.nsoftware.com/help/EKH/dlp/)
 * [macOS Edition](https://cdn.nsoftware.com/help/EKH/mac/)
 * [iOS Edition](https://cdn.nsoftware.com/help/EKH/mac/)
 
