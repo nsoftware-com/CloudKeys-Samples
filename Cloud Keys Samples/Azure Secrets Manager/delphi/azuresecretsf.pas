@@ -1,5 +1,5 @@
 (*
- * Cloud Keys 2022 Delphi Edition - Sample Project
+ * Cloud Keys 2024 Delphi Edition - Sample Project
  *
  * This sample project demonstrates the usage of Cloud Keys in a 
  * simple, straightforward way. It is not intended to be a complete 
@@ -125,7 +125,7 @@ begin
       ckAzureSecrets1.CreateSecret(FormCreatesecret.Edit1.Text, FormCreatesecret.Edit2.Text);
       RefreshSecrets();
     end;
-  except on E:EckAzureSecrets do
+  except on E:ECloudKeys do
     ShowMessage(E.Message)
   end;
 end;

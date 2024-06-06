@@ -1,5 +1,5 @@
 /*
- * Cloud Keys 2022 Java Edition - Sample Project
+ * Cloud Keys 2024 Java Edition - Sample Project
  *
  * This sample project demonstrates the usage of Cloud Keys in a 
  * simple, straightforward way. It is not intended to be a complete 
@@ -27,17 +27,17 @@ public class googlesecrets extends ConsoleDemo{
 
 	public static void main(String[] args) {
 
-		Googlesecrets googlesecrets = new Googlesecrets();
+		GoogleSecrets googlesecrets = new GoogleSecrets();
 		try {
-			googlesecrets.addGooglesecretsEventListener(new DefaultGooglesecretsEventListener(){
+			googlesecrets.addGoogleSecretsEventListener(new DefaultGoogleSecretsEventListener(){
 
 				@Override
-				public void error(GooglesecretsErrorEvent e) {
+				public void error(GoogleSecretsErrorEvent e) {
 					System.out.println("Error [" + e.errorCode + "]: " + e.description);
 				}
 
 				@Override
-				public void secretList(GooglesecretsSecretListEvent e) {
+				public void secretList(GoogleSecretsSecretListEvent e) {
 					System.out.println("   " + e.name);
 				}
 			});
@@ -136,15 +136,13 @@ class ConsoleDemo {
     System.out.print(label + punctuation + " ");
     return input();
   }
-
-  static String prompt(String label, String punctuation, String defaultVal)
-  {
-	System.out.print(label + " [" + defaultVal + "] " + punctuation + " ");
-	String response = input();
-	if(response.equals(""))
-		return defaultVal;
-	else
-		return response;
+  static String prompt(String label, String punctuation, String defaultVal) {
+      System.out.print(label + " [" + defaultVal + "] " + punctuation + " ");
+      String response = input();
+      if (response.equals(""))
+        return defaultVal;
+      else
+        return response;
   }
 
   static char ask(String label) {

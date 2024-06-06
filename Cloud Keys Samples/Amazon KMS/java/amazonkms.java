@@ -1,5 +1,5 @@
 /*
- * Cloud Keys 2022 Java Edition - Sample Project
+ * Cloud Keys 2024 Java Edition - Sample Project
  *
  * This sample project demonstrates the usage of Cloud Keys in a 
  * simple, straightforward way. It is not intended to be a complete 
@@ -28,17 +28,17 @@ public class amazonkms extends ConsoleDemo{
 
 	public static void main(String[] args) {
 
-		Amazonkms kms = new Amazonkms();
+		AmazonKMS kms = new AmazonKMS();
 		try {
-			kms.addAmazonkmsEventListener(new DefaultAmazonkmsEventListener(){
+			kms.addAmazonKMSEventListener(new DefaultAmazonKMSEventListener(){
 
 				@Override
-				public void error(AmazonkmsErrorEvent e) {
+				public void error(AmazonKMSErrorEvent e) {
 					System.out.println("Error [" + e.errorCode + "]: " + e.description);
 				}
 
 				@Override
-				public void keyList(AmazonkmsKeyListEvent e) {
+				public void keyList(AmazonKMSKeyListEvent e) {
 					System.out.println("   " + e.ARN);
 				}
 			});
@@ -140,15 +140,13 @@ class ConsoleDemo {
     System.out.print(label + punctuation + " ");
     return input();
   }
-
-  static String prompt(String label, String punctuation, String defaultVal)
-  {
-	System.out.print(label + " [" + defaultVal + "] " + punctuation + " ");
-	String response = input();
-	if(response.equals(""))
-		return defaultVal;
-	else
-		return response;
+  static String prompt(String label, String punctuation, String defaultVal) {
+      System.out.print(label + " [" + defaultVal + "] " + punctuation + " ");
+      String response = input();
+      if (response.equals(""))
+        return defaultVal;
+      else
+        return response;
   }
 
   static char ask(String label) {

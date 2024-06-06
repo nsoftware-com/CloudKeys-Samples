@@ -1,5 +1,5 @@
 /*
- * Cloud Keys 2022 Java Edition - Sample Project
+ * Cloud Keys 2024 Java Edition - Sample Project
  *
  * This sample project demonstrates the usage of Cloud Keys in a 
  * simple, straightforward way. It is not intended to be a complete 
@@ -28,17 +28,17 @@ public class googlekms extends ConsoleDemo{
 
 	public static void main(String[] args) {
 
-		Googlekms googlekms = new Googlekms();
+		GoogleKMS googlekms = new GoogleKMS();
 		try {
-			googlekms.addGooglekmsEventListener(new DefaultGooglekmsEventListener(){
+			googlekms.addGoogleKMSEventListener(new DefaultGoogleKMSEventListener(){
 
 				@Override
-				public void error(GooglekmsErrorEvent e) {
+				public void error(GoogleKMSErrorEvent e) {
 					System.out.println("Error [" + e.errorCode + "]: " + e.description);
 				}
 
 				@Override
-				public void keyList(GooglekmsKeyListEvent e) {
+				public void keyList(GoogleKMSKeyListEvent e) {
 					System.out.println("   " + e.name);
 				}
 			});
@@ -163,15 +163,13 @@ class ConsoleDemo {
     System.out.print(label + punctuation + " ");
     return input();
   }
-
-  static String prompt(String label, String punctuation, String defaultVal)
-  {
-	System.out.print(label + " [" + defaultVal + "] " + punctuation + " ");
-	String response = input();
-	if(response.equals(""))
-		return defaultVal;
-	else
-		return response;
+  static String prompt(String label, String punctuation, String defaultVal) {
+      System.out.print(label + " [" + defaultVal + "] " + punctuation + " ");
+      String response = input();
+      if (response.equals(""))
+        return defaultVal;
+      else
+        return response;
   }
 
   static char ask(String label) {

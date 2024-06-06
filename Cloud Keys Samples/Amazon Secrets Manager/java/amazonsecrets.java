@@ -1,5 +1,5 @@
 /*
- * Cloud Keys 2022 Java Edition - Sample Project
+ * Cloud Keys 2024 Java Edition - Sample Project
  *
  * This sample project demonstrates the usage of Cloud Keys in a 
  * simple, straightforward way. It is not intended to be a complete 
@@ -28,17 +28,17 @@ public class amazonsecrets extends ConsoleDemo{
 
 	public static void main(String[] args) {
 
-		Amazonsecrets amazonsecrets = new Amazonsecrets();
+		AmazonSecrets amazonsecrets = new AmazonSecrets();
 		try {
-			amazonsecrets.addAmazonsecretsEventListener(new DefaultAmazonsecretsEventListener(){
+			amazonsecrets.addAmazonSecretsEventListener(new DefaultAmazonSecretsEventListener(){
 
 				@Override
-				public void error(AmazonsecretsErrorEvent e) {
+				public void error(AmazonSecretsErrorEvent e) {
 					System.out.println("Error [" + e.errorCode + "]: " + e.description);
 				}
 
 				@Override
-				public void secretList(AmazonsecretsSecretListEvent e) {
+				public void secretList(AmazonSecretsSecretListEvent e) {
 					System.out.println("   " + e.name);
 				}
 			});
@@ -128,15 +128,13 @@ class ConsoleDemo {
     System.out.print(label + punctuation + " ");
     return input();
   }
-
-  static String prompt(String label, String punctuation, String defaultVal)
-  {
-	System.out.print(label + " [" + defaultVal + "] " + punctuation + " ");
-	String response = input();
-	if(response.equals(""))
-		return defaultVal;
-	else
-		return response;
+  static String prompt(String label, String punctuation, String defaultVal) {
+      System.out.print(label + " [" + defaultVal + "] " + punctuation + " ");
+      String response = input();
+      if (response.equals(""))
+        return defaultVal;
+      else
+        return response;
   }
 
   static char ask(String label) {

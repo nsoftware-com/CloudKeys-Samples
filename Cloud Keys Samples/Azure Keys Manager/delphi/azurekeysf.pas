@@ -1,5 +1,5 @@
 (*
- * Cloud Keys 2022 Delphi Edition - Sample Project
+ * Cloud Keys 2024 Delphi Edition - Sample Project
  *
  * This sample project demonstrates the usage of Cloud Keys in a 
  * simple, straightforward way. It is not intended to be a complete 
@@ -86,7 +86,7 @@ begin
     ckAzureKeys1.InputData := plaintext.Text;
     ckAzureKeys1.Sign(ListView1.Selected.Caption, signatureAlgorithm.Text, false);
     data.Text := ckAzureKeys1.OutputData;
-  except on E:EckAzureKeys do
+  except on E:ECloudKeys do
     ShowMessage(E.Message)
   end;
 end;
@@ -129,7 +129,7 @@ begin
                                 'sign, verify');
       RefreshKeys();
     end;
-  except on E:EckAzureKeys do
+  except on E:ECloudKeys do
     ShowMessage(E.Message)
   end;
 end;
@@ -146,7 +146,7 @@ begin
     ckAzureKeys1.InputData := 'Test';
     ckAzureKeys1.Encrypt(ListView1.Selected.Caption, encryptionAlgorithm.Text);
     data.Text := ckAzureKeys1.OutputData;
-  except on E:EckAzureKeys do
+  except on E:ECloudKeys do
     ShowMessage(E.Message)
   end;
 end;
