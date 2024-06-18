@@ -8,7 +8,7 @@
   "main": "amazonsecrets.js",
   "dependencies": {
     "full-icu": "*",
-    "cloudkeys": "^24.0.8923"
+    "cloudkeys": "^24.0.8935"
   },
   "scripts": {
     "amazonsecrets": "node amazonsecrets.js"
