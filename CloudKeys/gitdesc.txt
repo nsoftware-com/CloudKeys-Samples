@@ -1,0 +1,1 @@
+Components for managing keys & secrets with cloud-based Key Management & Secret Management services such as Amazon KMS, Amazon Secrets Manager, Azure Key Vault, Google KMS, and Google Secret Manager.
